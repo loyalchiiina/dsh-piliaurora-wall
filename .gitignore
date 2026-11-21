@@ -1,0 +1,10 @@
+node_modules/
+.pnpm-store/
+__pycache__/
+*.pyc
+*.log
+_ui_*.mjs
+_shot*.mjs
+.playwright-mcp/
+.DS_Store
+Thumbs.db

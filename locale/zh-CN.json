@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "PiliAurora 视频墙",
+    "description": "侧边栏一键搜索 B 站视频，并行打开 N 个独立播放窗口并自动网格排列；支持声音开关、全部隐藏/显示、切换下一批与自动连播，全程不抢鼠标。内置依赖自检与设置页：自动探测 PiliAurora 程序、服务脚本与 Python，缺程序可一键拉起，路径可手填或从快捷方式解析；设置页还直接给出 PiliAurora 官方 GitHub 下载地址，可一键打开或复制。"
+  },
+  "panel": {
+    "title": "PiliAurora 视频墙",
+    "search": "搜索关键词",
+    "open": "开窗排列",
+    "nextBatch": "下一批",
+    "arrange": "网格排列",
+    "hideAll": "全部隐藏",
+    "showAll": "全部显示",
+    "sound": "声音",
+    "autoplay": "连播",
+    "stop": "停止",
+    "entry": "入口"
+  }
+}

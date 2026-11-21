@@ -1,0 +1,9 @@
+# dsh-piliaurora-wall — PiliAurora 视频墙（侧边栏一键开 N 窗并网格排列）
+#
+# 双半插件：
+#   * 宿主半（lib/index.js）注册 /piliaurora-wall/* 路由，负责起停 PiliAurora
+#     多窗口服务（wall_server.py）、抓搜索池（fetch_pool.py）、转发命令；
+#   * 客户端半（lib/client.js）在侧边栏底部注册入口按钮，并渲染控制面板。
+- insert:
+    - id: dsh-piliaurora-wall
+      name: dsh-piliaurora-wall
