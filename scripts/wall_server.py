@@ -587,7 +587,23 @@ POOL_PTR = 0
 BATCH = 0
 AUTOPLAY = False
 COLS, ROWS = 4, 2
-SCREEN_W, SCREEN_H = 1920, 1080
+
+
+def _primary_screen_size(fallback=(1920, 1080)):
+    """主屏尺寸（像素）。不主动声明 DPI 感知：本进程与 MoveWindow 都用同一套
+    坐标空间，保持一致才不会错位。取不到就退回 1920x1080。"""
+    try:
+        import ctypes
+        u = ctypes.windll.user32
+        w, h = int(u.GetSystemMetrics(0)), int(u.GetSystemMetrics(1))
+        if w >= 640 and h >= 480:
+            return w, h
+    except Exception:
+        pass
+    return fallback
+
+
+SCREEN_W, SCREEN_H = _primary_screen_size()
 MAX_WINDOWS = 16
 # Seam compensation. MoveWindow sets the *frame* rect; the Flutter client area
 # is smaller than the frame and the window carries a border/rounded corner, so
