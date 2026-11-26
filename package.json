@@ -1,7 +1,7 @@
 {
   "name": "dsh-piliaurora-wall",
-  "version": "0.2.3",
-  "description": "PiliAurora 视频墙：侧边栏一键搜索 B 站视频，并行打开 N 个独立播放窗口并自动网格排列；支持一键开关声音、全部隐藏/显示、切换下一批视频与自动连播。全程不抢鼠标、不显示额外界面（窗口先在屏幕外创建再搬运）。内置依赖自检与设置页：自动探测 PiliAurora 程序/服务脚本/Python，缺 PiliAurora 程序可一键拉起（脚本或 Python 缺失仅提示），路径可手动指定。",
+  "version": "0.2.6",
+  "description": "在 DSH 右侧边栏以面板页签形式提供 B 站视频墙：输入关键词即可并行打开多个独立播放窗口并自动网格排列，支持一键开关声音、全部隐藏/显示、切换下一批与自动连播。全程指令通道驱动，不抢鼠标、不截屏。内置依赖自检与设置页，可手动指定 PiliAurora 程序/服务脚本/Python 路径。",
   "type": "module",
   "main": "./lib/index.js",
   "exports": {
@@ -17,6 +17,7 @@
     "cordis.patch.yml",
     "icon.svg",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE",
     "locale/*.json",
     "screenshots",

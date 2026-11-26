@@ -1,7 +1,8 @@
 {
   "meta": {
     "title": "PiliAurora Video Wall",
-    "description": "Search Bilibili from the sidebar, open N independent playback windows in parallel and auto-arrange them into a grid; toggle sound, hide/show all, switch batches and auto-advance, without stealing your mouse. Ships a dependency self-check and a settings tab: auto-detects the PiliAurora executable, the service scripts and Python, can launch PiliAurora, and accepts manual paths or a .lnk shortcut. The settings tab also shows PiliAurora's official GitHub download URL with open/copy shortcuts."
+    "description": "Search Bilibili from the sidebar, open N independent playback windows in parallel and auto-arrange them into a grid; toggle sound, hide/show all, switch batches and auto-advance, without stealing your mouse. Ships a dependency self-check and a settings tab: auto-detects the PiliAurora executable, the service scripts and Python, can launch PiliAurora, and accepts manual paths or a .lnk shortcut. The settings tab also shows PiliAurora's official GitHub download URL with open/copy shortcuts.",
+    "sidebar": "Video wall"
   },
   "panel": {
     "title": "PiliAurora Video Wall",
